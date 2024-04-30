@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+}
+h1{
+    margin: 0;
+}
+    header{
+        background-color: rgb(176, 176, 233);
+        display: flex; /*justifica o conteudo deixando ele alinhado*/
+        justify-content:space-between;/*modo que ele fica alinhado*/
+        padding: 10px;
+    }
+    #box-ordenar button{
+        background-color: rgb(131, 87, 34);
+    }
+    #box-categorias button{
+        background-color: rgb(170, 140, 102)
+    }
+    #box-categorias button,
+    #box-ordenar button{
+        border: 0;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+    

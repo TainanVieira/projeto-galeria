@@ -1,6 +1,4 @@
-document.addEventListener("DOMContentLoaded",function () {
-  
-
+document.addEventListener("DOMContentLoaded", function () {
   //vendo dcm acionado todo o HTML foi completamente carregado
   //Tipos de dados
   //String: Sequencia de caracter
@@ -12,58 +10,90 @@ document.addEventListener("DOMContentLoaded",function () {
   //function: bloco de codigo reutilizavel.
   //const: É usado para declarar uma variavel cujo o valor é permanete
 
-//Let é usado para declarar variaveis que os valores podem ser retribuidos 
+  //Let é usado para declarar variaveis que os valores podem ser retribuidos
 
-// Entre ()variavel e entre {} o comando 
-//let c =0;
-//console.log(c);
+  // Entre ()variavel e entre {} o comando
+  //let c =0;
+  //console.log(c);
 
-const notaMedia = 3;
+  const notaMedia = 3;
 
-if(notaMedia >= 6){
-  //alert('aluno passou');
-}
-else if (notaMedia >=4 && notaMedia < 6){
-  //alert('aluno quase passou');
-}
-else{
-  //alert('aluno reprovou!');
-};
+  if (notaMedia >= 6) {
+    //alert('aluno passou');
+  } else if (notaMedia >= 4 && notaMedia < 6) {
+    //alert('aluno quase passou');
+  } else {
+    //alert('aluno reprovou!');
+  }
 
-//----------OPERADORES--------
-//= Sinal de atribuição 
-//== sinal de comparação 
-//=== Verifica se os dois são iguais e têm o mesmo tipo de dados 
-//!= se é estritamente diferente 
-// > Maior 
-// < Menor 
+  //----------OPERADORES--------
+  //= Sinal de atribuição
+  //== sinal de comparação
+  //=== Verifica se os dois são iguais e têm o mesmo tipo de dados
+  //!= se é estritamente diferente
+  // > Maior
+  // < Menor
 
-const num = '6' ;
-if (num === 6){
-  //alert("é igual");
-}
-else {
-  //alert ("O tipo de dados é diferente");
-}
+  const num = "6";
+  if (num === 6) {
+    //alert("é igual");
+  } else {
+    //alert ("O tipo de dados é diferente");
+  }
 
-const professor = "joão";
+  const professor = "joão";
 
-  if (professor == "Lucas"){
-  console.log('sim é o Lucas')
+  if (professor == "tainã") {
+    // console.log('sim é o tainã')
+  } else {
+    //console.log('não é tainã')
+  }
+  //--------------------- / -----------------
 
-}else {
-  console.log('não é Lucas')
-}
+  // funcões são blocos de codigos que podem ser chamados e reutilizados
+  // Dentro dos parentezes da função vai os parâmetros/propriedades
+  //
+
+  function primeiraFunçao(parametro, segundoParametro) {
+    return parametro + "," + segundoParametro; //variaveis concatecadas com a utlização do sinal de (+) tambem com ('')
+  }
+
+  const parametro = "Essa é uma função com parâmetro";
+  const segundoParametro = " agora com dois parâmetros";
+  //console.log(primeiraFunçao(parametro, segundoParametro));
+
+  //---------------------- / -------------------
+
+  // arrays em javascript são estruturas de dados que permitem
+  //armazenas uma coleção ordenada de elementos.
+
+  let primeiroArray = ["lucas", "Marcos", "joão", "paulo"];
+
+  //console.log(primeiroArray[2]);
+
+  //------------- / ------------------
+
+  // Os objetos são coleções NÃO ORDENADAS de
+  //pares chave-valor, onde cada valor é associado
+  // a uma chave única
+
+  let pessoa = {
+    nome: "Tainã",
+    idade: "23",
+    cidade: "Francisco Beltrão",
+  };
+
+  //console.log(pessoa["nome"]);
+
+  //--------------- / --------------
+
+  const numeros = ['A','B', 'C', 'D']
+
+    numeros.forEach(elemento => {
+      console.log (elemento)
 
 
-
-
-
-
-
-
-
-
+});
 
 
 

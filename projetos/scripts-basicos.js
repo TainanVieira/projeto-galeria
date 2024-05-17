@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
     cidade: "Francisco Beltrão",
   };
 
-  //console.log(pessoa["nome"]);
+  console.log(pessoa["nome"]+','+pessoa["idade"]);
 
   //--------------- / --------------
 

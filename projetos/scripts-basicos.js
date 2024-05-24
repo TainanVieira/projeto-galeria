@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
   //!= se é estritamente diferente
   // > Maior
   // < Menor
+  //document busca o documento HTML
 
   const num = "6";
   if (num === 6) {

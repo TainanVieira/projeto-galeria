@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded", function () {
     animais: ["animais.jpg"],
   };
 
-  function carregaImagens() {
+  function carregaImagens(categoria) {
     // Selecionar elementos HTML com base em um seletor
     const galeria = document.querySelector("#galeria-imagens");
-
-    const imagens= baseImagens["todas"];
+    galeria.innerHTML='';//limpar bloco, apaga tudo dentro
+    const imagens= baseImagens[categoria];
     
     imagens.forEach(img =>{ 
 console.log(img);
@@ -20,14 +20,19 @@ console.log(img);
 
   };
 
-  carregaImagens();
+  carregaImagens("todas"); 
 
   //Função de CLICK
   document.body.addEventListener("click", function (event) {
     // Acessa a lista de classe de onde clicou e
     // procura pela classe botao-categoria
     if (event.target.classList.contains("botao-categoria")) {
-      alert(123);
+      
+      const categoria = event.target.dataset.categoria;
+
+      
+      //alert(categoria);
+      carregaImagens(categoria);
     }
   });
 });

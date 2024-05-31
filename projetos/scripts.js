@@ -14,14 +14,20 @@ document.addEventListener("DOMContentLoaded", function () {
     
     imagens.forEach(img =>{ 
 console.log(img);
-    galeria.innerHTML += '<div> <img src="imagens/' + img +' " /> </div>'
+    galeria.innerHTML += '<div class= "imagem_item" > <img src="imagens/' + img +' " /> </div>'
 
      });
 
   };
+function ordenaImagens(ordem){
+  const imagens = Array.from(document.querySelectorAll('#galeria-imagens .imagem_item'));
+ 
+  imagens.sort((a, b)=> {
+    console.log(a);
+  })
 
-  carregaImagens("todas"); 
-
+}
+  
   //Função de CLICK
   document.body.addEventListener("click", function (event) {
     // Acessa a lista de classe de onde clicou e
@@ -33,6 +39,19 @@ console.log(img);
       
       //alert(categoria);
       carregaImagens(categoria);
+
     }
+
+    if(event.target.classList.contains("botao_ordenar")){
+     
+      const ordem = event.target.dataset.ordem;
+      
+      ordenaImagens(ordem);
+    }
+  
+  
   });
+
+  carregaImagens("todas"); 
+
 });

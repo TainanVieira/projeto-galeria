@@ -25,4 +25,16 @@ h1{
         padding: 10px 20px;
         border-radius: 10px;
     }
+
+    #galeria-imagens{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+         
+    }
+    #galeria-imagens img{
+        max-width: 100%;
+        
+
+    }
     
